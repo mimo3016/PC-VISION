@@ -1,0 +1,358 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+body {
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 0.03px;
+    padding-bottom: 0.03px;
+    border-bottom: solid 2px;
+    background: linear-gradient(135deg, #7158fe, #9d4de6);
+    position: sticky;
+    top:0;
+    left: 0;
+    width: 100%;
+}   
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none ;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navbar li a:hover,
+.navbar li a.active{
+    color: black;
+}
+
+
+
+a{
+    text-decoration:none;
+    color:white;
+    font-size: 20px;
+}
+
+p{
+    color: black;
+    
+}
+
+/*Mix logo with background*/
+.logo{
+    mix-blend-mode:multiply;
+    padding-left: 45px;
+}
+
+/*Features*/
+.feature{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title-text{
+    text-align: center;
+    padding-top: 170px;
+    padding-bottom: 70px;
+   
+}
+
+.title-text p{
+    margin: auto;
+    font-size: 30px;
+    color: orchid;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    
+}
+
+
+/*Design the shape on top of "Features"*/
+.title-text p::after{
+    content: "";
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(orchid, #009688);
+    position:absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+} 
+
+.title-text h1{
+    font-size: 30px;
+    
+}
+
+/*Footer Section*/
+
+.footer{
+    padding: 9px 0 20px;
+    background: lightgrey;
+    position: relative;
+    
+}
+
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
+
+.footer-left , .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 5px;
+
+}
+
+.footer-right{
+    text-align: right;
+
+}
+
+.footer-row h1{
+    margin: 10px 0;
+}
+
+.footer-row p{
+    line-height: 35px;
+    margin: 0;
+
+}
+
+.footer-left .fa, .footer-right .fa{
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
+
+.footer-img{
+    position: absolute;
+    left: 44%;
+    top: 50%;
+    mix-blend-mode:multiply;
+}
+
+
+
+.footer-left .fa , .footer-right .fa{
+    font-size: 20px;
+    color: orchid;
+    margin: 10px;
+}
+
+
+
+.social{
+    text-align: center;
+}
+
+.social .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid orchid;
+    margin: 40px 5px 0;
+    color: orchid;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*Hover effect for icons*/
+
+.social .fa:hover{
+    background: orchid;
+    color: #fff;
+    transform: translateY(-7px);
+
+}
+
+/*Copyright styling*/
+
+.social p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,50,0.6) , rgba(0,0,50,0.6)), url(Gaming-Setup1.jpg);
+    background-size: cover;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: orchid;
+    margin-bottom: 10px;
+}
+
+
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    color: orchid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text p{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: lightgrey;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+
+
+
+.container .contactInfo .box .text h3{
+    font-weight: 300;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: orchid;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.contactForm .inputBox input, .contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span , 
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span ,
+.contactForm .inputBox textarea:valid ~ span{
+    color: orchid;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: orchid;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}

@@ -1,0 +1,331 @@
+/* All Products Page Styling*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 0.03px;
+    padding-bottom: 0.03px;
+    border-bottom: solid 2px;
+    background: linear-gradient(135deg, #7158fe, #9d4de6);
+    position: sticky;
+    top:0;
+    left: 0;
+}   
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none ;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navbar li a:hover,
+.navbar li a.active{
+    color: black;
+}
+
+/*Mix logo with background*/
+.logo{
+    mix-blend-mode:multiply;
+    padding-left: 45px;
+}
+
+
+a{
+    text-decoration:none;
+    color:white;
+    font-size: 20px;
+}
+
+p{
+    color: black;
+    
+}
+
+/*Features*/
+
+.footer{
+    width: 100%;
+    padding: 9px 0 20px;
+}
+
+.title-text{
+    text-align: center;
+    padding-top: 170px;
+    padding-bottom: 70px;
+    display: inline-block;
+    position: relative;
+    margin-left: -40px;
+    margin-right: 20px;
+   
+}
+
+.title-text p{
+    margin: auto;
+    font-size: 30px;
+    color: orchid;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    
+}
+
+
+/*Design the shape on top of "Features"*/
+.title-text p::after{
+    content: "";
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(orchid, #009688);
+    position:absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+} 
+
+.title-text h1{
+    font-size: 30px;
+    
+    
+}
+
+
+/* Styling for the title and sorting container */
+.row-1 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+.title-and-sorting {
+    display: flex;
+    align-items: center;
+}
+
+
+
+h2 {
+    margin: 0;
+    padding-right: 10px;
+    padding-left: 44%;
+    color: orchid;
+    font-size: 50px;
+}
+
+.title-text {
+    margin-left: 50%; /* Move the "All Products" title to the right */
+    padding-right: 20px;
+}
+
+.sorting {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* This pushes the sorting button to the far right */
+}
+
+
+select {
+    border: 2px solid orchid;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+select:focus {
+    outline: none;
+}
+
+
+/*Styling Products*/
+
+.categories{
+    padding-left: 10px;
+}
+
+.categories{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+.categories .small-container{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    position: relative;
+}
+
+.categories .small-container img{
+    width: 100%;
+    border-radius: 20px;
+    padding-bottom: 1%;
+}
+
+.categories .small-container .descr{
+    text-align: start;
+    padding: 10px 0;
+}
+
+/*Styling the brand of the product*/
+.categories .small-container .descr span{
+    color: orchid;
+    font-size: 17px;
+   
+} 
+
+/*Styling the name of the product*/
+.categories .small-container .descr h5{
+    padding-top: 7px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #088178;
+    
+}
+
+/*Styling the rating stars*/
+.categories .small-container .descr i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+
+/*Styling the cart*/
+
+.categories .small-container .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #009688;
+    border: 2px solid orchid;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    padding-left: 10px;
+}
+
+
+
+
+/*Footer Section*/
+
+.footer{
+    background: lightgrey;
+    position: relative;
+    
+}
+
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
+
+.footer-left , .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 5px;
+
+}
+
+.footer-right{
+    text-align: right;
+
+}
+
+.footer-row h1{
+    margin: 10px 0;
+}
+
+.footer-row p{
+    line-height: 35px;
+    margin: 0;
+
+}
+
+.footer-left .fa, .footer-right .fa{
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
+
+.footer-img{
+    position: absolute;
+    left: 44%;
+    top: 50%;
+    mix-blend-mode:multiply;
+}
+
+
+
+.footer-left .fa , .footer-right .fa{
+    font-size: 20px;
+    color: orchid;
+    margin: 10px;
+}
+
+
+
+.social{
+    text-align: center;
+}
+
+.social .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid orchid;
+    margin: 40px 5px 0;
+    color: orchid;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*Hover effect for icons*/
+
+.social .fa:hover{
+    background: orchid;
+    color: #fff;
+    transform: translateY(-7px);
+
+}
+
+/*Copyright styling*/
+
+.social p{
+    font-size: 12px;
+    margin-top: 20px;
+}

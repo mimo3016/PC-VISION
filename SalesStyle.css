@@ -1,0 +1,375 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 0.03px;
+    padding-bottom: 0.03px;
+    border-bottom: solid 2px;
+    background: linear-gradient(135deg, #7158fe, #9d4de6);
+    width: 100%;
+    position: sticky;
+    top:0;
+    left: 0;
+}   
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none ;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navbar li a:hover,
+.navbar li a.active{
+    color: black;
+}
+
+
+
+a{
+    text-decoration:none;
+    color:white;
+    font-size: 20px;
+}
+
+p{
+    color: black;
+    
+}
+
+
+/*Mix logo with background*/
+.logo{
+    mix-blend-mode:multiply;
+    padding-left: 45px;
+}
+
+
+/*Features*/
+.feature{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title-text{
+    text-align: center;
+    padding-top: 170px;
+    padding-bottom: 70px;
+   
+}
+
+.title-text p{
+    margin: auto;
+    font-size: 30px;
+    color: orchid;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    
+}
+
+
+/*Design the shape on top of "Features"*/
+.title-text p::after{
+    content: "";
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(orchid, #009688);
+    position:absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+} 
+
+.title-text h1{
+    font-size: 30px;
+    
+}/*Footer Section*/
+
+.footer{
+    padding: 9px 0 20px;
+    background: lightgrey;
+    position: relative;
+    
+}
+
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
+
+.footer-left , .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 5px;
+
+}
+
+.footer-right{
+    text-align: right;
+
+}
+
+.footer-row h1{
+    margin: 10px 0;
+}
+
+.footer-row p{
+    line-height: 35px;
+    margin: 0;
+
+}
+
+.footer-left .fa, .footer-right .fa{
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
+
+.footer-img{
+    position: absolute;
+    left: 44%;
+    top: 50%;
+    mix-blend-mode:multiply;
+}
+
+
+
+.footer-left .fa , .footer-right .fa{
+    font-size: 20px;
+    color: orchid;
+    margin: 10px;
+}
+
+
+
+.social{
+    text-align: center;
+}
+
+.social .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid orchid;
+    margin: 40px 5px 0;
+    color: orchid;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*Hover effect for icons*/
+
+.social .fa:hover{
+    background: orchid;
+    color: #fff;
+    transform: translateY(-7px);
+
+}
+
+/*Copyright styling*/
+
+.social p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+
+
+.pic{
+    width: 400px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+.coupon-card h3{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.coupon-card p{
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.coupon-row{
+    display: flex;
+    align-items: center;
+    margin: 25px auto;
+    width: fit-content;
+}
+
+
+#cpnCode{
+    border: 1px dashed #fff;
+    padding: 10px 20px;
+    border-right: 0;
+}
+
+
+#cpnBtn{
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 10px 20px;
+    color: #7158fe;
+    cursor: pointer;
+}
+
+#cpnCode1{
+    border: 1px dashed orchid;
+    color: orchid;
+    padding: 10px 20px;
+    border-right: 0;
+}
+
+
+#cpnBtn1{
+    border: 1px solid orchid;
+    background: orchid;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#cpnCode2{
+    border: 1px dashed #fff;
+    padding: 10px 20px;
+    border-right: 0;
+}
+
+
+#cpnBtn2{
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 10px 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.circle1, .circle2{
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.circle1{
+    left: -25px;
+}
+
+.circle2{
+    right: -25px;
+}
+
+
+.coupon-card1{
+    background: whitesmoke;
+    color: #fff;
+    text-align: center;
+    padding: 50px 200px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.pic{
+    width: 400px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+.coupon-card1 h3{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    color: orchid;
+}
+
+.coupon-card1 p{
+    font-size: 25px;
+    color: grey;
+}
+
+
+.coupon-card2{
+    background: #687d72;
+    color: #fff;
+    text-align: center;
+    padding: 50px 200px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.pic{
+    width: 400px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+.coupon-card2 h3{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.coupon-card2 p{
+    font-size: 25px;
+    color: aliceblue;
+}
+
+
+.holder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.coupon-card{
+    background: linear-gradient(135deg, #7158fe, #9d4de6);
+    color: #fff;
+    text-align: center;
+    padding: 50px 200px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+    margin-bottom: 20px;
+    max-width: 800px; /* Limit the width of the cards */
+}

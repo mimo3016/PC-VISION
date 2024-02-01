@@ -1,0 +1,723 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 0.03px;
+    padding-bottom: 0.03px;
+    border-bottom: solid 2px;
+    background: linear-gradient(135deg, #7158fe, #9d4de6);
+    position: sticky;
+    top:0;
+    left: 0;
+}   
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none ;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navbar li a:hover,
+.navbar li a.active{
+    color: black;
+}
+
+
+
+a{
+    text-decoration:none;
+    color:white;
+    font-size: 20px;
+}
+
+p{
+    color: black;
+    
+}
+
+
+/*Background image */
+.row {
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0,0,50,0.6) , rgba(0,0,50,0.6)), url(Gaming-Setup3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.image-text{
+    color: orchid;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+
+/*Button Border*/
+.button{
+    display: inline-block;
+    background: cornflowerblue;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+
+/*Mix logo with background*/
+.logo{
+    mix-blend-mode:multiply;
+    padding-left: 45px;
+}
+
+/*Button Design*/
+.button{
+    width: 200px;
+    padding: 15px 0;     
+    text-align: center;     
+    margin: 20px 10px;     
+    border-radius: 25px;     
+    font-weight: bold;     
+    border: 2px solid #009688;     
+    background: transparent;     
+    color: #fff;     
+    cursor: pointer;  
+    transition: 1.2s;   
+}
+
+/*Button Hover*/
+.button:hover{
+ background-color: orchid;
+ 
+}
+
+
+/*Features*/
+.feature{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title-text{
+    text-align: center;
+    padding-top: 170px;
+    padding-bottom: 70px;
+   
+}
+
+.title-text p{
+    margin: auto;
+    font-size: 30px;
+    color: orchid;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    
+}
+
+
+/*Design the shape on top of "Features"*/
+.title-text p::after{
+    content: "";
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(orchid, #009688);
+    position:absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+} 
+
+.title-text h1{
+    font-size: 30px;
+    
+}
+
+/*Feautures section*/
+
+/*Latest product section*/
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.latest{
+    flex-basis: 50%;
+}
+
+.latest-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.latest-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.latest h1{
+    text-align: left;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    color: orchid;
+    
+}
+
+.latest-text p{
+    padding-top: 30px;
+    padding: 1 20px;
+    text-align: initial;
+}
+.latest-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+/*Latest Product Button Border*/
+.latest-button{
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+
+/*Latest Product Button Design*/
+.latest-button{
+    width: 200px;
+    padding: 15px 0;     
+    text-align: center;     
+    margin: 20px 10px;     
+    border-radius: 25px;     
+    font-weight: bold;     
+    border: 2px solid #009688;     
+    background: transparent;     
+    color: teal;     
+    cursor: pointer;  
+    transition: 1.2s;   
+}
+
+/*Latest Product Button Hover*/
+.latest-button:hover{
+ background-color: orchid;
+ 
+}
+
+/*Price section*/
+
+.price-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.price{
+    flex-basis: 50%;
+}
+
+.price-img{
+    flex-basis: 50%;
+    margin: auto;
+    padding-top: 30%;
+}
+
+.price-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.price h1{
+    text-align: left;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    color: orchid;
+    padding-top: 60%;
+    
+}
+
+.price-text p{
+    padding-top: 30px;
+    padding: 1 20px;
+    text-align: initial;
+    
+}
+
+.price-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+
+
+/*Price Button Border*/
+.price-button{
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+/*Price Button Design*/
+.price-button{
+    width: 200px;
+    padding: 15px 0;     
+    text-align: center;     
+    margin: 20px 10px;     
+    border-radius: 25px;     
+    font-weight: bold;     
+    border: 2px solid #009688;     
+    background: transparent;     
+    color: teal;     
+    cursor: pointer;  
+    transition: 1.2s;   
+}
+
+/*Price Button Hover*/
+.price-button:hover{
+ background-color: orchid;
+ 
+}
+
+/*Student Section*/
+
+/*Student Button Border*/
+.student-button{
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+/*Student Button Design*/
+.student-button{
+    width: 200px;
+    padding: 15px 0;     
+    text-align: center;     
+    margin: 20px 10px;     
+    border-radius: 25px;     
+    font-weight: bold;     
+    border: 2px solid #009688;     
+    background: transparent;     
+    color: teal;     
+    cursor: pointer;  
+    transition: 1.2s;   
+}
+
+/*Student Button Hover*/
+.student-button:hover{
+ background-color: orchid;
+ 
+}
+
+
+.student-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.student{
+    flex-basis: 50%;
+}
+
+.student-img{
+    flex-basis: 50%;
+    margin: auto;
+    padding-top: 30%;
+}
+
+.student-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.student h1{
+    text-align: left;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    color: orchid;
+    padding-top: 60%;
+    
+}
+
+.student-text p{
+    padding-top: 30px;
+    padding: 1 20px;
+    text-align: initial;
+    
+}
+
+.student-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+
+/*Feed Section*/
+
+
+/*Best Seller Section*/
+
+/*Best Seller Button Border*/
+.bseller-button{
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+/*Best Seller Button Design*/
+.bseller-button{
+    width: 200px;
+    padding: 15px 0;     
+    text-align: center;     
+    margin: 20px 10px;     
+    border-radius: 25px;     
+    font-weight: bold;     
+    border: 2px solid #009688;     
+    background: transparent;     
+    color: teal;     
+    cursor: pointer;  
+    transition: 1.2s;   
+}
+
+/*Best Seller Button Hover*/
+.bseller-button:hover{
+ background-color: orchid;
+ 
+}
+
+
+.bseller-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.bseller{
+    flex-basis: 50%;
+}
+
+.bseller-img{
+    flex-basis: 50%;
+    margin: auto;
+    padding-top: 20%;
+}
+
+.bseller-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.bseller h1{
+    text-align: left;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    color: orchid;
+    padding-top: 40%;
+    
+}
+
+.bseller-text p{
+    padding-top: 30px;
+    padding: 1 20px;
+    text-align: initial;
+    
+}
+
+.bseller-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+
+/*Arrival Section*/
+
+/*Arrival Button Border*/
+.arrival-button{
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+/*Arrival Button Design*/
+.arrival-button{
+    width: 200px;
+    padding: 15px 0;     
+    text-align: center;     
+    margin: 20px 10px;     
+    border-radius: 25px;     
+    font-weight: bold;     
+    border: 2px solid #009688;     
+    background: transparent;     
+    color: teal;     
+    cursor: pointer;  
+    transition: 1.2s;   
+}
+
+/*Arrival Button Hover*/
+.arrival-button:hover{
+ background-color: orchid;
+ 
+}
+
+
+.arrival-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.arrival{
+    flex-basis: 50%;
+}
+
+.arrival-img{
+    flex-basis: 50%;
+    margin: auto;
+    padding-top: 30%;
+}
+
+.arrival-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.arrival h1{
+    text-align: left;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    color: orchid;
+    padding-top: 60%;
+    
+}
+
+.arrival-text p{
+    padding-top: 30px;
+    padding: 1 20px;
+    text-align: initial;
+    
+}
+
+.arrival-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+
+
+
+/*New Partner Section*/
+
+.partner-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.partner{
+    flex-basis: 50%;
+}
+
+.partner-img{
+    flex-basis: 50%;
+    margin: auto;
+    padding-top: 30%;
+}
+
+.partner-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.partner h1{
+    text-align: left;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    color: orchid;
+    padding-top: 60%;
+    
+}
+
+.partner-text p{
+    padding-top: 30px;
+    padding: 1 20px;
+    text-align: initial;
+    
+}
+
+.partner-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+
+
+/*Footer Section*/
+
+.footer{
+    padding: 9px 0 20px;
+    background: lightgrey;
+    position: relative;
+    
+}
+
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
+
+.footer-left , .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 5px;
+
+}
+
+.footer-right{
+    text-align: right;
+
+}
+
+.footer-row h1{
+    margin: 10px 0;
+}
+
+.footer-row p{
+    line-height: 35px;
+    margin: 0;
+
+}
+
+.footer-left .fa, .footer-right .fa{
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
+
+.footer-img{
+    position: absolute;
+    left: 44%;
+    top: 50%;
+    mix-blend-mode:multiply;
+}
+
+
+
+.footer-left .fa , .footer-right .fa{
+    font-size: 20px;
+    color: orchid;
+    margin: 10px;
+}
+
+
+
+.social{
+    text-align: center;
+}
+
+.social .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid orchid;
+    margin: 40px 5px 0;
+    color: orchid;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*Hover effect for icons*/
+
+.social .fa:hover{
+    background: orchid;
+    color: #fff;
+    transform: translateY(-7px);
+
+}
+
+/*Copyright styling*/
+
+.social p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+
+
